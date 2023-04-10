@@ -1,0 +1,66 @@
+body {
+    height: 100vh;
+}
+
+.account{
+    width: 6rem;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.about-company > img{
+    height: 100%;
+    width: 40%;
+}
+
+.heading-line {
+    height: 1px;
+    background-color: lightgray;
+}
+
+.table-success {
+    background-color: #d1e7dd;
+}
+
+.main-object {
+    color: gray;
+}
+
+.gid-table {
+    gap: 0.5rem;
+}
+
+.gid-div {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    min-width: 250px;
+}
+
+.order-inputs {
+    width: 75%;
+}
+
+i {
+    cursor: pointer;
+}
+
+.order-table {
+    min-height: 276px;
+}
+
+.w300 {
+    width: 300px;
+}
+
+.pros-text {
+    min-height: 128px;
+}
+
+.bg-orange {
+    background-color: #df6716;
+}
+
+.bg-darkpurple {
+    background-color: rgb(113, 13, 190);
+}

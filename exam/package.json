@@ -1,0 +1,23 @@
+{
+  "name": "shatalov-211-331-webdev-exam-2023-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "accountscript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanGoosling/shatalov-211-331-webdev-exam-2023-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanGoosling/shatalov-211-331-webdev-exam-2023-1/issues"
+  },
+  "homepage": "https://github.com/RyanGoosling/shatalov-211-331-webdev-exam-2023-1#readme",
+  "devDependencies": {
+    "eslint": "^8.31.0"
+  }
+}

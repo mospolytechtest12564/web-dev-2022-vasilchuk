@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вечерняя прогулка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon-kremlin.png" type="image/x-icon">
+    <script defer src="accountscript.js"></script>
+
+</head>
+
+<body class="d-flex flex-column">
+    <header>
+        <nav class="navbar bg-orange"> <!--bg-body-tertiary -->
+            <div class="container-sm flex-md-row flex-column">
+                <a class="text-decoration-none d-md-flex align-items-center" href="#">
+                    <img src="images/travel-icon.png" alt="Logo" height="90" class="mx-auto d-block">
+                    <p class="d-flex flex-column mb-0 ms-3 text-light">
+                        <span class="fs-3">Вечерняя прогулка</span>
+                        <span class="fs-6 text-break">Лучшие маршруты, чтобы узнать город</span>
+                    </p>
+                </a>
+                <a class="text-wrap bg-warning text-dark badge account mt-md-0 mt-3" href="index.html">На главную</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="alerts fs-5 container-lg mt-3">
+        </section>
+
+        <section class="container-lg mt-3">
+            <h3>Оставленные заявки</h3>
+            <div class="table-responsive-sm">
+                <table class="table order-table mt-3">
+                    <thead>
+                        <tr>
+                            <th scope="col">№</th>
+                            <th scope="col">Название маршрута</th>
+                            <th scope="col">Дата</th>
+                            <th scope="col">Стоимость в &#8381;</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="order-tbody">
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Загрузка.</td>
+                            <td>Загрузка.</td>
+                            <td>Пожалуйста, ожидайте.</td>
+                            <td class="fs-5">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <ul class="pagination justify-content-center align-items-center mt-3">
+                <li class="page-item to-start">
+                    <a class="page-link disabled" aria-label="Previous" href="#route-list">
+                        В начало
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link active" href="#route-list">1</a></li>
+                <li class="page-item"><a class="page-link" href="#route-list">2</a></li>
+                <li class="page-item"><a class="page-link" href="#route-list">3</a></li>
+                <li class="page-item"><a class="page-link" href="#route-list">4</a></li>
+                <li class="page-item"><a class="page-link" href="#route-list">5</a></li>
+                <li class="page-item to-end">
+                    <a class="page-link" aria-label="Next" href="#route-list">
+                        В конец
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+
+    <footer class="bg-orange d-flex justify-content-center py-2 mt-3 mt-auto">
+        <span class="fs-5 text-light">&COPY; ООО «Вечерняя прогулка»</span>
+    </footer>
+
+    <div class="modal fade" id="new-order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Ваша заявка</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>ФИО гида: <span class="guide-name">Алла</span></p>
+                    <p>Название маршрута: <span class="route-name">Аллея</span></p>
+                    <form class="needs-validation was-validated new-order-form" novalidate>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="col-form-label" for="date-excursion">Дата экскурсии:</label>
+                                <div class="order-inputs">
+                                    <input class="form-control" type="date" name="date" id="date-excursion"
+                                        value="2023-01-20" aria-describedby="dateHelpBlock" required min="2023-01-15" step="1">
+                                    <div id="dateHelpBlock" class="form-text">
+                                        Экскурсия не может проводиться в день создании заявки или ранее.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="col-form-label" for="time-excursion">Время начала:</label>
+                                <div class="order-inputs">
+                                    <input class="form-control" type="time" name="time" id="time-excursion"
+                                        value="14:00" min="09:00" max="23:00" step="1800"
+                                        aria-describedby="timeHelpBlock" required>
+                                    <div id="timeHelpBlock" class="form-text">
+                                        Экскурсии проводятся с 9:00 до 23:00 каждые полчаса.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="col-form-label" for="duration-excursion">Длительность
+                                    экскурсии:</label>
+                                <div class="order-inputs">
+                                    <select class="form-select" name="duration" id="duration-excursion">
+                                        <option>1 час</option>
+                                        <option>2 часа</option>
+                                        <option>3 часа</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="col-form-label" for="persons-excursion">Количество человек: </label>
+                                <div class="order-inputs">
+                                    <input class="form-control" type="number" name="persons" id="persons-excursion"
+                                        value="1" min="1" max="20" aria-describedby="personsHelpBlock" required>
+                                    <div id="personsHelpBlock" class="form-text">
+                                        Экскурсионная группа не более 20 человек.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="guide_id" id="guide-id">
+                        <input type="hidden" name="route_id" id="route-id">
+                        <div class="row mb-3">
+                            <h6>Дополнительные опции:</h6>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="option-1"
+                                        name="optionFirst">
+                                    <label class="form-check-label" for="option-1">
+                                        Скидка для школьников и студентов
+                                    </label>
+                                    <p class="text-secondary">Скидка 15%</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="option-2"
+                                        name="optionSecond">
+                                    <label class="form-check-label" for="option-2">
+                                        Сувенирная продукция
+                                    </label>
+                                    <p class="text-secondary">Увеличение стоимости на 500&#8381; за каждого
+                                        посетителя</p>
+                                </div>
+                            </div>
+                            <!-- 1. Использовать скидку для школьников и студентов. При выборе чекбокса стоимость
+                                уменьшается на 15%.
+                                5. Тематические сувениры для посетителей. Стоимость увеличивается на 500 рублей для
+                                каждого посетителя -->
+                            <div>
+                                <h5>Итоговая стоимость: <span class="total-price">0</span>&#8381;</h5>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                        <button type="button" class="btn btn-primary create-new-order disabled"
+                            data-bs-dismiss="modal">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="del-order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Удаление задачи</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Вы уверены что хотите удалить
+                        заявку?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Нет</button>
+                    <button type="button" class="btn btn-danger del-order-btn"
+                        data-bs-dismiss="modal">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <template id="alert-template">
+        <div class="alert alert-dismissible" role="alert">
+            <span class="alert-text"></span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </template>
+
+    <template id="order-template">
+        <tr>
+            <th scope="row" class="number"></th>
+            <td class="name">Загрузка.</td>
+            <td class="date">Загрузка.</td>
+            <td class="price">Пожалуйста, ожидайте.</td>
+            <td class="fs-5 buttons-i">
+                <i class="bi bi-eye-fill" data-bs-toggle="modal" data-bs-target="#new-order"
+                    data-action="show"></i>
+                <i class="bi bi-pencil-fill" data-bs-toggle="modal" data-bs-target="#new-order"
+                    data-action="edit"></i>
+                <i class="bi bi-trash-fill" data-bs-toggle="modal" data-bs-target="#del-order"
+                    data-action="delete"></i>
+            </td>
+        </tr>
+    </template> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
