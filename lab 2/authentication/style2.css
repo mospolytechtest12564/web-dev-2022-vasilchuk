@@ -1,0 +1,82 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 17px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 200px;
+}
+
+.back-button {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.fio {
+    padding-bottom: 4px;
+}
+
+.username {
+    width: 220px; 
+    height: 18px;
+}
+
+.email {
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.pochta {
+    padding-bottom: 7px;
+}
+
+.mail {
+    width: 220px; 
+    height: 18px;
+}
+
+.opross {
+    border: none;
+    padding: 1px 5px 5px 0px;
+    margin: 0;
+}
+
+.obrashenie {
+    padding-bottom: 3px;
+}
+
+.message {
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
+
+.textarea {
+    width: 250px;
+}
+
+.vloshenie {
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.soglasie {
+    padding-bottom: 7px;
+}
+
+.knopka {
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;  
+    border: 3px solid rgb(79, 153, 250);
+    padding: 0px;
+    width: 125px; 
+    height: 35px;
+    background-color: rgba(48, 60, 238, 0.767);
+}

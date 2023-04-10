@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <a href="auth.html">Вход</a>
+            </div>
+        </div>
+    </header>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <form>
+                <fieldset>
+                    <legend>Серия процессора</legend>
+
+                    <div>
+                        <input type="checkbox" value="manufacturer1" name="manufacturer" id="manufacturer1">
+                        <label for="manufacturer1">Intel Core i3</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" value="manufacturer2" name="manufacturer" id="manufacturer2">
+                        <label for="manufacturer2">Intel Core i5</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" value="manufacturer3" name="manufacturer" id="manufacturer3">
+                        <label for="manufacturer3">Intel Core i7</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" value="manufacturer4" name="manufacturer" id="manufacturer4">
+                        <label for="manufacturer4">Intel Core i9</label>
+                    </div>
+
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Видеокарта</legend>
+
+                    <div>
+                        <input type="radio" value="group1" name="group" id="group1">
+                        <label for="group1">NVIDIA GeForce GTX 1660 Super</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="group2" name="group" id="group2">
+                        <label for="group2">NVIDIA GeForce RTX 3060</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="group3" name="group" id="group3">
+                        <label for="group3">NVIDIA GeForce RTX 3060Ti</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="group4" name="group" id="group4">
+                        <label for="group4">NVIDIA GeForce RTX 3070</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="group5" name="group" id="group5">
+                        <label for="group5">NVIDIA GeForce RTX 3070Ti</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="group6" name="group" id="group6">
+                        <label for="group6">NVIDIA GeForce RTX 3080</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="group7" name="group" id="group7">
+                        <label for="group7">NVIDIA GeForce RTX 3080Ti</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" value="group8" name="group" id="group8">
+                        <label for="group8">NVIDIA GeForce RTX 4080</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="group9" name="group" id="group9">
+                        <label for="group9">NVIDIA GeForce RTX 4090</label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Объем встроенной памяти</legend>
+
+                    <div>
+                        <input type="radio" value="memory1" name="memory" id="memory1">
+                        <label for="memory1">256 ГБ</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="memory2" name="memory" id="memory2">
+                        <label for="memory2">512 ГБ</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="memory3" name="memory" id="memory3">
+                        <label for="memory3">1 ТБ</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="memory4" name="memory" id="memory4">
+                        <label for="memory4">2 ТБ</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="memory5" name="memory" id="memory5">
+                        <label for="memory5">3 ТБ</label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Объем оперативной памяти</legend>
+
+                    <div>
+                        <input type="radio" value="ram" name="ram" id="ram1">
+                        <label for="ram1">4 ГБ</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="ram2" name="ram" id="ram2">
+                        <label for="ram2">8 ГБ</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="ram3" name="ram" id="ram3">
+                        <label for="ram3">16 ГБ</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="ram4" name="ram" id="ram4">
+                        <label for="ram4">32 ГБ</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="ram5" name="ram" id="ram5">
+                        <label for="ram5">64 ГБ</label>
+                    </div>
+
+
+                </fieldset>
+
+                <button class="knopka" type="submit">Применить</button>
+
+            </form>
+        </aside>
+
+        <div class="page-content">
+            <h1 class="product-category-header">Персональные компьютеры</h1>
+
+            <div class="products-list">
+                <div class="product-card">
+                    <div class="product-image">
+                       <img src="images/product 1.webp" alt="product"> 
+                    </div>
+
+                    <div class="product-details">
+                        <header>iRU Game 310H5GMA</header>
+
+                        <p class="information">ЦПУ: Intel Core i5 11400F
+                            <br>NVIDIA GeForce RTX 3060 - 12288 Мб
+                            <br>ОЗУ: DDR4 16ГБ
+                            <br>Память: 1ТБ(SSD)
+                            <br>Мат. плата: Intel H510</p>
+
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">73 990 &#8381;</span><span class="buy">Заказать</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                       <img src="images/product 2.webp " alt="product"> 
+                    </div>
+
+                    <div class="product-details">
+                        <header>ZET GAMING WARD H285</header>
+
+                        <p class="information">ЦПУ: Intel Core i5-12400F
+                            <br>NVIDIA GeForce RTX 3060Ti - 8 ГБ
+                            <br>ОЗУ: DDR4 16 ГБ
+                            <br>Память: 512ГБ(SSD)
+                            <br>Мат. плата: Intel B660</p>
+
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">86 990 &#8381;</span><span class="buy">Заказать</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                       <img src="images/product 3.webp" alt="product"> 
+                    </div>
+
+                    <div class="product-details">
+                        <header>MSI Infinite S3 12TC-495XRU</header>
+
+                        <p class="information">ЦПУ: Intel Core i5 12400F
+                            <br>NVIDIA GeForce RTX 3060 - 12288 Мб
+                            <br>ОЗУ: DDR4 16ГБ
+                            <br>Память: 1ТБ(SSD)
+                            <br>Мат. плата: Intel H610</p>
+
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">79 990 &#8381;</span><span class="buy">Заказать</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                       <img src="images/product 4.webp" alt="product"> 
+                    </div>
+
+                    <div class="product-details">
+                        <header>Acer Predator PO3-630</header>
+
+                        <p class="information">ЦПУ: Intel Core i7 11700F
+                            <br>NVIDIA GeForce RTX 3070 - 8192 Мб
+                            <br>ОЗУ: DDR4 16ГБ
+                            <br>Память: 1ТБ(SSD)
+                            <br>Мат. плата: Intel B560</p>
+
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">98 490 &#8381;</span><span class="buy">Заказать</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                       <img src="images/product 5.webp" alt="product"> 
+                    </div>
+
+                    <div class="product-details">
+                        <header>MSI Trident 3 A 11SI-076XRU</header>
+
+                        <p class="information">ЦПУ: Intel Core i5 11400F
+                            <br>NVIDIA GeForce GTX 1660 Super - 6144 Мб
+                            <br>ОЗУ: DDR4 8ГБ
+                            <br>Память: 512ГБ(SSD)
+                            <br>Мат. плата: Intel H510</p>
+
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">81 990 &#8381;</span><span class="buy">Заказать</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                       <img src="images/product 6.webp" alt="product"> 
+                    </div>
+
+                    <div class="product-details">
+                        <header>ASUS G10CE-711700108W</header>
+
+                        <p class="information">ЦПУ: Intel Core i7 11700
+                            <br>NVIDIA GeForce RTX 3060 - 12288 Мб
+                            <br>ОЗУ: DDR4 16ГБ
+                            <br>Память: 512ГБ(SSD)
+                            <br>Мат. плата: Intel B560</p>
+
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">99 990 &#8381;</span><span class="buy">Заказать</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                       <img src="images/product 7.webp" alt="product"> 
+                    </div>
+
+                    <div class="product-details">
+                        <header>iRU Game 717</header>
+
+                        <p class="information">ЦПУ: Intel Core i7 10700F
+                            <br>NVIDIA GeForce RTX 3080 - 10240 Мб
+                            <br>ОЗУ: DDR4 32ГБ
+                            <br>Память: 1ТБ, 500ГБ(SSD)
+                            <br>Мат. плата: Intel B460</p>
+
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">95 990 &#8381;</span><span class="buy">Заказать</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                       <img src="images/product 8.webp" alt="product"> 
+                    </div>
+
+                    <div class="product-details">
+                        <header>HYPERPC Cyber Max N2</header>
+
+                        <p class="information">ЦПУ: Intel Core i9 13900KF
+                            <br>NVIDIA GeForce RTX 4090 - 24576 Мб
+                            <br>ОЗУ: DDR5 64ГБ
+                            <br>Память: 3ТБ(SSD)
+                            <br>Мат. плата: Intel Z790</p>
+
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">99 990 &#8381;</span><span class="buy">Заказать</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                       <img src="images/product 9.webp" alt="product"> 
+                    </div>
+
+                    <div class="product-details">
+                        <header>Компьютер HYPERPC Volt Max</header>
+
+                        <p class="information">ЦПУ: Intel Core i7 12700F
+                            <br>Видеокарта:NVIDIA GeForce RTX 4080 - 16384 Мб
+                            <br>ОЗУ: DDR5 64ГБ
+                            <br>Память: 500ГБ + 2ТБ(SSD)
+                            <br>Мат. плата: Intel Z690
+                        </p>
+
+                        <div class="control">
+                            <button class="btn">
+                                <span class="price">99 990 &#8381;</span><span class="buy">Заказать</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="scroll-to-top-btn">
+            &#9650;
+        </button>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            &copy; 2022 OOO "Компьютеры"
+        </div>
+    </footer>
+
+</body>
+
+</html>

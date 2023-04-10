@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="images/background.jpg" alt="Фон" class="img">
+    <main>
+        <form method="post" action="http://httpbin.org/post">
+            <input type="hidden" name="user_id" value="1">
+
+            <div class="border">
+
+                <div>
+                    <label for="username">Введите логин</label>
+                </div>
+
+                <div>
+                    <input class="username" type="text" name="username" id="username" placeholder="username">
+                </div>
+
+                <div class="parol">
+                    <label for="password">Введите пароль</label>
+                </div>
+                <div>
+                    <input class="password" type="text" name="password" id="password" placeholder="password" value=""
+                        required>
+                </div>
+
+
+                <div class="remember">
+                    <input type="checkbox" name="remember" id="remember" value="true">
+                    <label for="remember">Запомнить меня</label>
+
+                </div>
+
+                <div class="voyti">
+                    <button class="knopka" type="submit">Войти</button>
+                </div>
+
+                <div class="feedback-button">
+                    <a href="index2.html">Обратная связь</a>
+                </div>
+
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
